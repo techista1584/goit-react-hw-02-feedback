@@ -29,7 +29,8 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
         className={`${s.feedback__btn} ${s[option]}`}
     >
     {hoverState === option ? (
-      <img src={emojis[option]} alt={option} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }} />
+      <img src={emojis[option]} alt={option} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }} 
+      onLoad={(e) => e.target.classList.add('loaded')} />
     ) : (
       option
     )}

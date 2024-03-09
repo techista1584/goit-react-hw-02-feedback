@@ -3,21 +3,22 @@
     justify-content:space-around;
     margin: 0;
 }
+
 .feedback__btn {
     cursor: pointer;
     font-size: 16px;
-    padding: 15px;
+    padding: 25px;
     border: none;
     border-radius: 50%;
     text-align: center;
-    background-color: #f3f6f9;
+    background-color: #f3f3f9;
     color: #82909e;
     width: 100px;
     height: 100px;
     line-height: 20px;
     margin: 0 8px;
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition-duration: 0.4s;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +27,7 @@
 .feedback__btn:hover{
     background-color: #f9e425b4;
     color:white;
+    padding:15px;
     box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
