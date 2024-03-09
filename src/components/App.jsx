@@ -37,9 +37,9 @@ export class App extends Component {
       <>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={this.state}
+            options={{ good: this.state.good, neutral: this.state.neutral, bad: this.state.bad }}
             onLeaveFeedback={this.handleLeaveFeedback} 
-            />
+          />
             { total === 0 ? (
               <Notification message="There is no feedback"></Notification>) : (
               <Statistics

@@ -2,25 +2,45 @@
     display:flex;
     justify-content:space-around;
     margin: 0;
-    padding: 0 40px;
 }
 .feedback__btn {
-    cursor:pointer;
+    cursor: pointer;
     font-size: 16px;
-    padding:10px;
+    padding: 20px;
     border: none;
-    border-radius: 40%;
+    border-radius: 50%;
     text-align: center;
-    background-color:#f3f6f9;
-    color:#82909e;
+    background-color: #f3f6f9;
+    color: #82909e;
     width: 100px;
+    height: 100px;
+    line-height: 20px;
     margin: 0 8px;
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition-duration: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .feedback__btn:hover{
-    background-color: #4267B2;
+    background-color: #f9e425b4;
     color:white;
     box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.feedback__btn img {
+    pointer-events: none;
+}
+
+.feedback__btn.good:hover {
+    background-color: rgb(99, 208, 52);
+}
+
+.feedback__btn.neutral:hover {
+    background-color: rgba(63, 146, 171, 0.492);
+}
+
+.feedback__btn.bad:hover {
+    background-color: rgb(192, 61, 61);
 }
