@@ -6,7 +6,7 @@
 .feedback__btn {
     cursor: pointer;
     font-size: 16px;
-    padding: 20px;
+    padding: 15px;
     border: none;
     border-radius: 50%;
     text-align: center;
@@ -34,13 +34,13 @@
 }
 
 .feedback__btn.good:hover {
-    background-color: rgb(99, 208, 52);
+    background-color: rgba(159, 246, 45, 0.951);
 }
 
 .feedback__btn.neutral:hover {
-    background-color: rgba(63, 146, 171, 0.492);
+    background-color: rgba(91, 196, 228, 0.852);
 }
 
 .feedback__btn.bad:hover {
-    background-color: rgb(192, 61, 61);
+    background-color: rgba(231, 82, 82, 0.912);
 }
